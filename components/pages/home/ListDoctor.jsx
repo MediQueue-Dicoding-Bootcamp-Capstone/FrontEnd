@@ -1,13 +1,13 @@
 "use client";
-import useSWR, { preload } from "swr";
+import useSWR from "swr";
 import Image from "next/image";
-import doctorImage from "@/public/doctor1.jpg";
 import Link from "next/link";
 import fetcher from "@/lib/fetcher";
-preload('/api/doctors', fetcher);
 const ListDoctor = () => {
-  const { data, error, isLoading } = useSWR("/api/doctors", fetcher);
-  const doctors = data?.data?.data.slice(0, 6);
+  const { data, error } = useSWR("/api/doctors", fetcher);
+  const doctors = data ? data.data.data : [];
+  const isLoading = !data && !error;
+
   if (isLoading) {
     return <div className="flex justify-center py-20">Loading...</div>;
   }

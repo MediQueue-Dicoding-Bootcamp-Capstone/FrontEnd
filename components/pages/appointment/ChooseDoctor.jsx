@@ -7,10 +7,7 @@ import useSWR, { preload } from "swr";
 import fetcher from "@/lib/fetcher";
 import { Skeleton } from "@/components/ui/skeleton";
 import { formatTime } from "@/lib/format";
-import { list } from "postcss";
-import { List } from "flowbite-react";
 
-preload("/api/doctors", fetcher);
 
 const ChooseDoctor = ({
   handleShowComponent,
