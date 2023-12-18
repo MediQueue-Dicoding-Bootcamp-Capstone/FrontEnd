@@ -12,7 +12,6 @@ export default function Page() {
     const dataParams = {
       ...data
     }
-    console.log(dataParams)
     const response = await axios.post("/api/dashboard/user", dataParams);
 
   }

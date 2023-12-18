@@ -39,9 +39,6 @@ export default function Page() {
   const allDoctor = data?.data?.data;
   const [show, setShow] = useState(0);
   const [appointments, setAppointments] = useState();
-  console.log(value);
-  console.log(appointments);
-  console.log(data);
   const [name, setName] = useState();
   useEffect(() => {
     const name = localStorage.getItem("name");

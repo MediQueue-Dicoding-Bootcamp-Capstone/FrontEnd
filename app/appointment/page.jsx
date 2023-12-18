@@ -32,13 +32,11 @@ export default function Page() {
   };
   const handleBackComponent = (e) => {
     e.preventDefault();
-    console.log("diklik");
     if (showComponent == 1) return;
     setShowComponent(showComponent - 1);
     setIsSuccess({ ...isSuccess, [showComponent]: false });
   };
   const handleSendData = (data) => {
-    console.log(data);
     setAppointment(data);
   };
   return (

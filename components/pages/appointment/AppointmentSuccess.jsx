@@ -1,7 +1,6 @@
 import { FiCheckCircle } from "react-icons/fi";
 import Link from "next/link";
 const AppointmentSuccess = ({appointment}) => {
-    console.log(appointment)
     return (
       <div className="w-full flex flex-col items-center mt-4">
         <div className="w-full md:w-2/3  flex flex-col md:flex-nowrap bg-secondary/20 border-l-2 border-secondary p-6 ">

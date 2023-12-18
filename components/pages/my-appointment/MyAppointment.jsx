@@ -29,7 +29,6 @@ const MyAppointment = () => {
   const current_page = data?.data?.data?.current_page;
   const last_page = data?.data?.data?.last_page;
   const handleButton = (type) => {
-    console.log("klik");
     if (type == "next") {
       if (current_page === last_page) {
         return;
@@ -44,18 +43,13 @@ const MyAppointment = () => {
       scrollToTop();
     }
   };
-  console.log(page);
-  console.log(current_page);
-  console.log(data);
   const [modalShow, setModalShow] = useState(false);
   const [id, setId] = useState();
   const handleDetail = (id) => {
-    console.log(id)
     setModalShow(true);
     setId(id);
   }
   const closeModal = () => {
-    console.log('trigger')
     setModalShow(false);
   }
   if(isLoading) return <div className="flex justify-center py-20">Loading...</div>

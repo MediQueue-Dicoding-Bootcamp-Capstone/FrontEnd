@@ -38,7 +38,6 @@ const ChooseDoctor = ({
       });
       setListDoctor(search);
     }
-    console.log("diklik");
   };
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
   const handleOptionClick = (option) => {
@@ -58,7 +57,6 @@ const ChooseDoctor = ({
     setDropdownOpen(false);
   };
 
-  console.log(ListDoctor);
 
   return (
     <div className="w-full mt-4 flex flex-col items-center ">

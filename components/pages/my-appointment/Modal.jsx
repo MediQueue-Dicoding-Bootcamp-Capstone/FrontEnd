@@ -3,7 +3,6 @@ import { formatDate, formatTime } from "@/lib/format";
 import Image from "next/image";
 import useSWR from "swr";
 export default function Modal({ id, closeModal }) {
-  console.log(id);
   const { data, isLoading, error } = useSWR(`/api/appointment/${id}`, fetcher);
   const appointment = data?.data;
   const stopPropagation = (event) => {

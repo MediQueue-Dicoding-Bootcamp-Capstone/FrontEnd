@@ -21,7 +21,6 @@ const FormRegister = () => {
     const confirmPassword = confirmPasswordRef.current.value;
     const name = nameRef.current.value;
 
-    console.log(name, email, password);
     if (password !== confirmPassword) {
       setShowError("Password doesn't match");
       return;
@@ -31,7 +30,6 @@ const FormRegister = () => {
       password,
       name,
     });
-    console.log(response);
     if(response.data.status != true) {
       setShowError(response.data.message.errors.email[0]);
       return;

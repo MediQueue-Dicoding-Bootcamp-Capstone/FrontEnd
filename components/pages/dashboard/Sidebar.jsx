@@ -9,7 +9,6 @@ const Sidebar = () => {
     const pathname = usePathname();
     const router = useRouter();
     const handleLogout = () => {
-      console.log("logout");
       // delete all localstorage & cookies
       localStorage.clear();
       document.cookie.split(";").forEach((c) => {

@@ -14,7 +14,6 @@ const Navbar = ({name,role,isLogin}) => {
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
   const handleLogout = async () =>{ 
     const response = await axios.post("/api/logout");
-    console.log(response);
     localStorage.clear();
     window.location.href = "/";
   }

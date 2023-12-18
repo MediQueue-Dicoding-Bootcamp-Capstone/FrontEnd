@@ -7,7 +7,6 @@ import fetcher from "@/lib/fetcher";
 preload('/api/doctors', fetcher);
 const ListDoctor = () => {
   const { data, error, isLoading } = useSWR("/api/doctors", fetcher);
-  console.log(data);
   const doctors = data?.data?.data.slice(0, 6);
   if (isLoading) {
     return <div className="flex justify-center py-20">Loading...</div>;
