@@ -5,8 +5,7 @@ export async function POST(req){
     const data = await req.json();
     const {patient_name, patient_phone_number, patient_address, appointment_date, type_appointment, doctor_id}= data;
     const token = getToken();
-    console.log(token)
-    const response = await axios.post("http://127.0.0.1:8000/api/appointments", {
+    const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}api/appointments`, {
         patient_name: patient_name,
         patient_phone_number: patient_phone_number,
         patient_address: patient_address,
@@ -18,7 +17,6 @@ export async function POST(req){
             Authorization: `Bearer ${token}`,
         },
     }).then((res) => res.data).catch((err) => {throw err});
-    console.log(response);
     return NextResponse.json({status: true, data: response.data});
 }
 

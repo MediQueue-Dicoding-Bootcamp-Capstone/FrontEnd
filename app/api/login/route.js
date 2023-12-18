@@ -5,7 +5,7 @@ export async function POST(req) {
   const data = await req.json();
   const { email, password } = data;
   const response = await axios
-    .post("http://127.0.0.1:8000/api/login", {
+    .post(`${process.env.NEXT_PUBLIC_API_URL}api/login`, {
       email,
       password,
     })

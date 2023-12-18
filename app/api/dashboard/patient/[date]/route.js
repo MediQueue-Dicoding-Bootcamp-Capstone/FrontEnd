@@ -5,7 +5,7 @@ import { NextResponse } from "next/server";
 export async function GET(req,{params}) {
     const {date} = params;
     const token = getToken();
-    const response = await axios.get(`http://127.0.0.1:8000/api/dashboard/patient/${date}`,{
+    const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}api/dashboard/patient/${date}`,{
         headers: {
             Authorization: `Bearer ${token}`,
         },

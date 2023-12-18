@@ -3,9 +3,8 @@ import axios from "axios";
 import { NextResponse } from "next/server";
 export async function POST(req) {
     const token = getToken();
-    console.log(token)
     try{
-        const response = await axios.post("http://127.0.0.1:8000/api/users/logout",{
+        const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}api/users/logout`,{
             Headers: {
                 Authorization: `Bearer ${token}`,
             },

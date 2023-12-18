@@ -21,7 +21,7 @@ export async function POST(req){
     console.log(data)
     const token = getToken();
     console.log(token)
-    const response = await axios.post(`http://127.0.0.1:8000/api/adduser`,{
+    const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}api/adduser`,{
         name: name,
         email: email,
         password: password,

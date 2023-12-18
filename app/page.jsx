@@ -5,7 +5,10 @@ import doctor from "@/public/doctor1.jpg";
 import facility from "@/public/facility.png";
 import facility2 from "@/public/facility2.jpg";
 import ListDoctor from "@/components/pages/home/ListDoctor";
-
+export const metadata = {
+  title: 'Home | MediQueue',
+  description: 'MediQueue is an application to make it easier for patients who want to consult about their health.',
+}
 export default function Home() {
   return (
     <main className="w-full">
