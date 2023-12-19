@@ -12,16 +12,15 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="w-full">
-      <section className="bg-primary w-full flex justify-center">
+      <section className="bg-primary w-full flex justify-center" id="home">
         <div className="max-w-5xl py-24 md:items-center justify-center px-6 flex flex-col-reverse gap-8 md:gap-4 md:flex-row md:h-[90VH] lg:h-[95vh]">
           <div className="w-full md:w-1/2 flex justify-center flex-col p-1">
-            <h2 className="text-2xl lg:text-6xl font-bold text-white md:text-4xl">
+            <h2 className="text-2xl lg:text-6xl font-bold text-white md:text-4xl mb-2">
               MediQueue
-              <span className="text-tertiary"> dolor sit. amet.</span>
+              <span className="text-tertiary"> Easy To Use</span>
             </h2>
-            <p className="mb-8 text-white ">
-              MediQueue adalah sebuah aplikasi untuk memudahkan pasien yang akan
-              melakukan konsultasi tentang kesehatannya.{" "}
+            <p className="mb-4 text-white ">
+            MediQueue is an application to make it easier for patients who want to consult about their health.
             </p>
             <div className="flex w-full justify-center md:justify-start">
               <Link
@@ -45,7 +44,7 @@ export default function Home() {
         </div>
       </section>
       <ListDoctor />
-      <section className="py-20 w-full flex flex-col  items-center lg:min-h-screen">
+      <section className="py-20 w-full flex flex-col  items-center lg:min-h-screen" id="facilities">
         <div className="max-w-5xl w-full flex flex-col gap-8 px-4">
           <h2 className="text-3xl font-semibold mb-2 md:mb-8 text-center">
             Facilities
@@ -87,7 +86,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="min-h-screen flex items-center justify-center bg-primary py-20 border-b border-white">
+      <section className="min-h-screen flex items-center justify-center bg-primary py-20 border-b border-white" id="gallery">
         <div className="max-w-7xl">
           <h2 className="text-4xl font-bold text-center mb-12 text-white">
             Gallery

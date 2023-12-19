@@ -53,7 +53,7 @@ export default function Page() {
             ) : (
               <FiCircle className="text-xl" />
             )}{" "}
-            Pilih Dokter
+            Choose Doctor
           </div>
           <div
             className={`text-sm md:text-base flex-1 p-2 border border-primary  font-semibold flex justify-center items-center gap-1 md:gap-2 ${
@@ -65,7 +65,7 @@ export default function Page() {
             ) : (
               <FiCircle className="text-xl" />
             )}
-            Isi Formulir
+            Fill The Form
           </div>
           <div
             className={`text-sm md:text-base flex-1 p-2 border border-primary font-semibold flex justify-center items-center gap-1 md:gap-2 rounded-r-md ${
@@ -77,7 +77,7 @@ export default function Page() {
             ) : (
               <FiCircle className="text-xl" />
             )}
-            Sukses
+            Success
           </div>
         </div>
         {showComponent == 1 ? (

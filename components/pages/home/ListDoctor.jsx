@@ -12,7 +12,7 @@ const ListDoctor = () => {
     return <div className="flex justify-center py-20">Loading...</div>;
   }
   return (
-    <section className="w-full flex justify-center lg:min-h-screen items-center">
+    <section className="w-full flex justify-center lg:min-h-screen items-center" id="doctor">
       <div className="max-w-5xl py-24">
         <h2 className="text-2xl font-bold text-center mb-8">Doctors</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:px-4 md:grid-cols-3 gap-4 ">

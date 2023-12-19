@@ -55,16 +55,16 @@ const Navbar = ({name,role,isLogin}) => {
           >
             <FiX size={32} />
           </button>
-          <Link href={"/"} className="p-1 text-md ">
+          <Link href={"/#"} className="p-1 text-md ">
             Home
           </Link>
-          <Link href={"/"} className="p-1 text-md ">
+          <Link href={"#doctor"} className="p-1 text-md ">
             Doctor
           </Link>
-          <Link href={"/"} className="p-1 text-md ">
+          <Link href={"#facilities"} className="p-1 text-md ">
             Facilities
           </Link>
-          <Link href={"/"} className="p-1 text-md ">
+          <Link href={"#gallery"} className="p-1 text-md ">
             Gallery
           </Link> 
           {isLogin ? <div className="relative"><button

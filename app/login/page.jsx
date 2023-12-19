@@ -20,7 +20,7 @@ export default function Page() {
         <div className="w-full h-1/6  px-8">
           <div className="w-full bg-secondary/50 text-center py-4 text-secondary font-semibold rounded-md text-base md:text-base">
             Dont have an account?{" "}
-            <Link href={"/signup"} className="font-bold ">
+            <Link href={"/register"} className="font-bold ">
               Sign Up
             </Link>
           </div>

@@ -2,6 +2,7 @@
 import ListUser from "@/components/pages/dashboard/management-user/ListUser";
 import { useRef } from "react";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 export default function Page() {
   const formRef = useRef(null);
@@ -13,6 +14,13 @@ export default function Page() {
       ...data
     }
     const response = await axios.post("/api/dashboard/user", dataParams);
+    Swal.fire({
+      icon: "success",
+      title: "Success",
+      text: "Success create user",
+    });
+    formRef.current.reset();
+    
 
   }
 

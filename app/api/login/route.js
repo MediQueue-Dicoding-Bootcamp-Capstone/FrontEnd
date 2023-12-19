@@ -16,7 +16,6 @@ export async function POST(req) {
       status: false,
       message: response.data.errors.message,
     });
-    console.log(response)
   // ...
 
   // if (response.headers["set-cookie"]) {
